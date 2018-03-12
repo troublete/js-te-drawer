@@ -1,0 +1,25 @@
+{
+  "name": "te-sidebar",
+  "version": "0.1.0",
+  "description": "Sidebar web component",
+  "main": "te-sidebar.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troublete/te-sidebar.git"
+  },
+  "keywords": [
+    "web",
+    "component",
+    "sidebar",
+    "troublete"
+  ],
+  "author": "Willi Eßer <willi.esser@troublete.com>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "xo": "^0.20.3"
+  }
+}
