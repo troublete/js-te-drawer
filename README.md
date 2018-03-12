@@ -1,6 +1,6 @@
 # te-sidebar
 
-> Sidebar slider element
+> Sidebar web component
 
 ## Install
 
