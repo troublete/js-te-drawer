@@ -1,41 +1,41 @@
-# te-sidebar
+# te-drawer
 
-> Sidebar web component
+> Drawer web component
 
 ## Install
 
 ```
-npm i -S te-sidebar
+npm i -S te-drawer
 ```
 
 ## Usage
 
 ```
-<te-sidebar>Sidebar content</te-sidebar>
+<te-drawer>Drawer content</te-drawer>
 ```
 
 ## Attributes
 
 | Attribute | Type | Description |
 |---|---|---|
-| visible | `boolean` | Indication if sidebar visible or not. |
+| visible | `boolean` | Indication if drawer visible or not. |
 
 ## Methods
 
 | Method | Description |
 |---|---|
-| `show()` | Slide-in sidebar. |
-| `hide()` | Slide-out sidebar. |
-| `toggle()` | Slide-in/out sidebar. |
+| `show()` | Slide-in drawer. |
+| `hide()` | Slide-out drawer. |
+| `toggle()` | Slide-in/out drawer. |
 
 ## CSS Variables
 
 | Var | Description | Default |
 |---|---|---|
-| --te-sidebar-overlay-color | `background-color` of the overlay element behind the sidebar, covering the rest of the page. | `rgba(0,0,0,.5)` |
-| --te-sidebar-background | `background` value of the sidebar itself. | `white` |
-| --te-sidebar-max-width | `max-width` of the sidebar. (`min-width` is set to `320px`) | `360px` |
-| --te-sidebar-shadow | `box-shadow` value of the sidebar. | `none` |
+| --te-drawer-overlay-color | `background-color` of the overlay element behind the drawer, covering the rest of the page. | `rgba(0,0,0,.5)` |
+| --te-drawer-background | `background` value of the drawer itself. | `white` |
+| --te-drawer-max-width | `max-width` of the drawer. (`min-width` is set to `320px`) | `360px` |
+| --te-drawer-shadow | `box-shadow` value of the drawer. | `none` |
 
 ## Disclaimer
 

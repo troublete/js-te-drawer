@@ -2,20 +2,26 @@
 <html>
 	<head>
 		<title></title>
-		<script type="text/javascript" src="te-sidebar.js"></script>
+		<script type="text/javascript" src="te-drawer.js"></script>
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 		<style type="text/css">
 			body { margin:0; }
 		</style>
 	</head>
 	<body>
-		<te-sidebar>
-			<header >Sidebar</header>
+		<te-drawer>
+			<header >Drawer</header>
 			<a href="https://troublete.com">troublete</a>
-		</te-sidebar>
+		</te-drawer>
 
-		<button>button</button>
+		<button>toggle drawer</button>
 		<a href="#">link</a>
 		<input type="text" name="something">
+
+		<script type="text/javascript">
+			document.querySelector('button').addEventListener('click', () => {
+				document.querySelector('te-drawer').toggle();
+			});
+		</script>
 	</body>
 </html>

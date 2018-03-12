@@ -1,20 +1,20 @@
 {
-  "name": "te-sidebar",
+  "name": "te-drawer",
   "version": "0.1.0",
-  "description": "Sidebar web component",
-  "main": "te-sidebar.js",
+  "description": "Drawer web component",
+  "main": "te-drawer.js",
   "dependencies": {},
   "scripts": {
     "test": "xo"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/troublete/te-sidebar.git"
+    "url": "git+https://github.com/troublete/te-drawer.git"
   },
   "keywords": [
     "web",
     "component",
-    "sidebar",
+    "drawer",
     "troublete"
   ],
   "author": "Willi Eßer <willi.esser@troublete.com>",
