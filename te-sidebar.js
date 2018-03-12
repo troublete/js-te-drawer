@@ -24,6 +24,11 @@ if (window.customElements) {
 			this.setAttribute('aria-hidden', false);
 			document.body.style.position = 'fixed';
 			document.body.style.overflow = 'hidden';
+
+			this.shadowRoot.querySelector('slot').assignedNodes().filter(element => element instanceof HTMLElement)
+					.forEach(element => {
+						element.removeAttribute('tabindex');
+					});
 		}
 
 		hide() {
@@ -31,6 +36,11 @@ if (window.customElements) {
 			this.setAttribute('aria-hidden', true);
 			document.body.style.position = '';
 			document.body.style.overflow = '';
+
+			this.shadowRoot.querySelector('slot').assignedNodes().filter(element => element instanceof HTMLElement)
+				.forEach(element => {
+					element.setAttribute('tabindex', '-1');
+				});
 		}
 
 		isVisible() {
@@ -68,6 +78,14 @@ if (window.customElements) {
 
 		_registerTabEventHandling() {
 			this.shadowRoot.querySelector('slot').addEventListener('slotchange', () => {
+				if (!this.isVisible()) {
+					this.shadowRoot.querySelector('slot')
+						.assignedNodes().filter(element => element instanceof HTMLElement)
+						.forEach(element => {
+							element.setAttribute('tabindex', '-1');
+						});
+				}
+
 				this.shadowRoot.querySelector('slot')
 					.assignedNodes().filter(element => element instanceof HTMLElement)
 					.pop().addEventListener('keydown', e => {
