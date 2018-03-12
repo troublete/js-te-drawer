@@ -21,5 +21,10 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "xo": "^0.20.3"
+  },
+  "xo": {
+    "rules": {
+      "no-undef": "warn"
+    }
   }
 }
