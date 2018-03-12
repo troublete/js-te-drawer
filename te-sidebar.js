@@ -106,7 +106,7 @@ if (window.customElements) {
 			sidebar.innerHTML = `
 			<style>
 			:host {
-				z-index:9999;
+				z-index:2000;
 				display:block;
 				position:fixed;
 				height:100vh;
