@@ -2,6 +2,9 @@
 
 > Drawer web component
 
+[![Sonar Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=troublete-elements-drawer&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=troublete-elements-drawer)
+[![Build Status](https://travis-ci.org/troublete/te-drawer.svg?branch=master)](https://travis-ci.org/troublete/te-drawer)
+
 ## Install
 
 ```
